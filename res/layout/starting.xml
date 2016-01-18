@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/paperback" >
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/button"
+        android:text="Add New Category" />
+
+    <Button
+        android:id="@+id/cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/button"
+        android:text="Go To Homepage" />
+
+</RelativeLayout>

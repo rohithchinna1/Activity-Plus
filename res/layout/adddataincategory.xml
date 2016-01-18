@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paperback"
+    android:orientation="vertical"
+    android:weightSum="5" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/getCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="2dp"
+            android:weightSum="4" >
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="Enter Date"
+                android:textColor="#000000" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/getDate"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Get Date"
+                android:textColor="#669933" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="2dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4" >
+
+            <EditText
+                android:id="@+id/place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="Enter Place"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/getPlace"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Get Place"
+                android:textColor="#669933" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="2dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4" >
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="Enter Time"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/getTime"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="GetTime"
+                android:textColor="#669933" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <EditText
+            android:id="@+id/cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="Enter Cost"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button1"
+            android:layout_below="@+id/button1"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/enterDetails"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+                android:background="@drawable/confirm"
+                android:paddingLeft="0dp"
+                android:text=""
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/getAllDetails"
+                android:layout_width="180dp"
+                android:layout_height="70dp"
+                android:layout_alignBaseline="@+id/enterDetails"
+                android:layout_alignBottom="@+id/enterDetails"
+                android:layout_marginLeft="44dp"
+                android:layout_toRightOf="@+id/enterDetails"
+                android:layout_weight="1"
+                android:background="@drawable/viewdetails"
+                android:text=""
+                android:textColor="#000000">
+            </Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

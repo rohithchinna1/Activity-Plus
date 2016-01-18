@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paperback"
+    android:orientation="vertical"
+    android:weightSum="6.0" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/startup" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/signUpClick"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/signup" />
+
+    <EditText
+        android:id="@+id/repasswordSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/signUpClick"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="ReEnter password" 
+        android:inputType="textPassword">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwordSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/repasswordSignUp"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="Enter Password" 
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/emailSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/passwordSignUp"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="Email Address" />
+
+    <EditText
+        android:id="@+id/unameSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/emailSignUp"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="User Name" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Sign up to keep record of your daily activities" />
+    
+    </RelativeLayout>
+
+</LinearLayout>
